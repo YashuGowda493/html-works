@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes om{
+            0%,100%{
+                /* transform: translate(0,0); */
+                transform: rotateY(180deg);
+            }
+            50%{
+                transform: translate(-400px,-250px);
+            }
+        }
+        #a{
+            background-color:violet;
+            width: fit-content;
+            transform: rotate(360deg);
+            color: bisque;
+            margin: 300px 600px;
+            animation: om 4s linear 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"><img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" width="200px"></div>
+</body>
+</html>

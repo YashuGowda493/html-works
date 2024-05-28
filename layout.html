@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        div{
+            padding: 10px;
+            margin: 10px;
+        }
+        #N{
+            display: flex;
+            background-color: aqua;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #h{
+            display: flex;
+            color: yellow;
+            background-color: blue;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #l,#c,#r{
+            display: inline-block;
+            font-size: large;
+            text-align: center;
+            width: 100px;
+            height: 400px;
+            padding: 40px;
+            /* margin: 20px 150px; */
+
+        }
+        #f{
+            display: flex;
+            color: yellow;
+            background-color: rgb(60, 0, 255);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="N">
+        <div style="font-size: large; ">Home</div>
+        <div style="font-size: large; ">About</div>
+        <div style="font-size: large; ">Contact</div>
+        <div style="font-size: large; ">Menu</div>
+    </div>
+    <div id="h">Header</div>
+    <div id="l" style="width: 325px; background-color: violet;">Left Container</div>
+    <div id="c" style="width: 520px; background-color: red;">Center</div>
+    <div id="r" style="width: 325px; background-color: violet;">Right</div>
+    <div id="f">Footer</div>
+</body>
+</html>

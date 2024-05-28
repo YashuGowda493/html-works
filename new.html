@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layer</title>
+    <style>
+        @keyframes on{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(300px);
+
+            }
+        }
+        @keyframes l{
+            0%{
+                transform: translateY(30px);
+            }
+            /* 10%{
+                transform: translateY(-300px);
+            } */
+            100%{
+                transform: translateY(-100px);
+
+            }
+        }
+        @keyframes b{
+            0%{
+                transform: translateX(600px);
+            }
+            100%{
+                transform: translateX(0px);
+
+            }
+        }
+        @keyframes r{
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translatey(-300px);
+
+            }
+        }
+        #y:hover #a{
+            animation: on 2s ease-in 1s infinite forwards;
+            transition: all 5s linear 0s;
+        }
+        #y:hover #b{
+            animation: l 2s ease-in 1s infinite forwards;
+            transition: all 7s linear 0s;
+        }
+        #y:hover #c{
+            animation: b 2s ease-in 1s infinite forwards;
+            transition: all 5s linear 0s;
+        }
+        #y:hover #d{
+            animation: r 2s ease-in 1s infinite forwards;
+            transition: all 5s linear 0s;
+        }
+        #y:hover #m{
+            transform: translateY(-350px);
+            background-color: rgba(140, 255, 127, 0.347);
+        }
+        #y{
+            background-color: rgba(0, 0, 4, 0.3);
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            overflow: hidden;
+            top: 0px;
+            transition: all 1s linear 3s;
+        }
+    div {
+        font: 22px Arial;
+        display: inline-block;
+        padding: 1em 2em;
+        text-align: center;
+        color: white;
+        background: red; /* default color *
+        /* "to left" / "to right" - affects initial color */
+        background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+        background-size: 200%;
+        transition: .5s ease-out;
+    }
+    div:hover {
+        background-position: left;}
+    </style>
+</head>
+<body>
+    <div id="y" style="width: 400px; height: 200px;border: 5px rgb(255, 0, 0) solid;" >
+        <div id="a" style="width: 400px; height: 0px;border: 5px yellow solid;"></div>
+        <div id="b" style="width: 0px; height: 400px;border: 5px rgb(21, 0, 255) solid;"></div>
+        <img src="https://www.landmark.edu/uploads/news/img/ClassPicture_Fall2023.jpg" alt="">
+        <div id="c" style="width: 400px; height: 0px;border: 5px yellow solid;"></div>
+         <img id="m" src="https://www.landmark.edu/uploads/news/img/ClassPicture_Fall2023.jpg" alt="">
+        <div id="d" style="width: 0px; height: 400px;border: 5px rgb(36, 5, 161) solid;"></div>
+    </div>
+    <div id="k">
+
+    </div>
+    <div>Hover me</div>
+</body>
+</html>

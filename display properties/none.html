@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>none and hover</title>
+    <style>
+        ol{
+            display: none;
+            width: fit-content;
+            font-size: large;
+            cursor: pointer;
+        }
+        ul{
+            display: none;
+            list-style-type: none;
+            width: fit-content;
+            font-size: large;
+        }
+        h1{
+            width: fit-content;
+        }
+        h1:hover ol{
+            display:block;
+        }
+        ol:hover>ul{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <h1><button>BEVERAGES</button>
+    <ol style="width: fit-content;"><button>COFFEE</button>
+        <ul>
+            <li>Cold coffee</li>
+            <li>HOT coffee</li>
+            <li>Filter coffee</li>
+        </ul>
+    </ol>
+    <ol id="a" style="width: fit-content;"><button>TEA</button>
+        <ul>
+            <li>Lemon tea</li>
+            <li>Green tea</li>
+            <li>Ginger tea</li>
+        </ul>
+    </ol>
+    <ol style="width: fit-content;"><button>COOL DRINKS</button>
+        <ul>
+            <li>Mazza</li>
+            <li>Mango shake</li>
+            <li>Coke</li>
+        </ul>
+    </ol>
+</h1>
+</body>
+</html>
